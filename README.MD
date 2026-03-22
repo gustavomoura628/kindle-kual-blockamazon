@@ -77,11 +77,20 @@ The stock configs point to:
 | **Disable Amazon Services** | No change | Disable | No change |
 | **Enable Amazon Services** | No change | Enable | No change |
 
+## Prerequisites
+
+- Jailbroken Kindle (e.g. via [WinterBreak](https://kindlemodding.org/jailbreaking/WinterBreak/))
+- [KUAL](https://kindlemodding.org/jailbreaking/post-jailbreak/installing-kual-mrpi/) installed
+- [renameotabin](https://kindlemodding.org/jailbreaking/post-jailbreak/disable-ota.html) installed (blocks OTA updates at the binary level — this extension blocks at the DNS/service level as an additional layer)
+
 ## Install
 
-1. Copy the `blockamazon/` folder to `/mnt/us/extensions/` on your Kindle.
-2. Open KUAL and tap "Block Amazon".
-3. Reboot to stop already-running services.
+1. Download or clone this repo.
+2. Connect your Kindle via USB (make sure USBNetwork is off so it mounts as storage).
+3. Copy the `blockamazon/` folder to the `extensions/` folder on your Kindle (that's `/mnt/us/extensions/` on the device).
+4. Eject the Kindle.
+5. Open KUAL on the Kindle and tap **"Block Amazon"** under "Network Control".
+6. Reboot the Kindle to stop already-running Amazon services.
 
 ## Limitations
 
