@@ -1,19 +1,43 @@
 {
 	"items": [
 	{
-		"name": "Amazon Block-All v1",
+		"name": "Network Control",
 		"priority": -998,
 		"items": [
 		{
-            "name": "Block Amazon",
-            "priority": 1, 
-            "action": "bin/block.sh",
+            "name": "1. Block Amazon",
+            "priority": 1,
+            "action": "bin/block-amazon.sh",
             "exitmenu": false
 		},
 		{
-            "name": "Unblock Amazon",
-            "priority": 2, 
+            "name": "2. Block Amazon (allow S3)",
+            "priority": 2,
+            "action": "bin/allow-s3.sh",
+            "exitmenu": false
+		},
+		{
+            "name": "3. Unblock Everything",
+            "priority": 3,
             "action": "bin/unblock.sh",
+            "exitmenu": false
+		},
+		{
+            "name": "---",
+            "priority": 4,
+            "action": "",
+            "exitmenu": false
+		},
+		{
+            "name": "Disable Amazon Services",
+            "priority": 5,
+            "action": "bin/disable-services.sh",
+            "exitmenu": false
+		},
+		{
+            "name": "Enable Amazon Services",
+            "priority": 6,
+            "action": "bin/enable-services.sh",
             "exitmenu": false
 		}
 		]
