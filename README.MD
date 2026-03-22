@@ -1,3 +1,5 @@
+WARNING: THIS BRICKED MY KINDLE DO NOT USE THIS!
+
 # blockamazon - KUAL Extension
 
 De-Amazonify a jailbroken Kindle. Three layers of blocking, all reversible.
